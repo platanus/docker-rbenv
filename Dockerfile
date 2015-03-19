@@ -15,17 +15,17 @@ RUN cd /usr/local && \
 # Install rbenv vars plugin
 RUN mkdir -p /usr/local/rbenv/plugins && \
     cd /usr/local/rbenv/plugins && \
-    curl -L https://github.com/sstephenson/rbenv-vars/archive/master.tar.gz | tar xz && \
+    curl -L https://github.com/sstephenson/rbenv-vars/archive/v1.2.0.tar.gz | tar xz && \
     mv rbenv-vars-master rbenv-vars
 
 # Install ruby build rbenv gem-rehash plugin
 RUN mkdir -p /usr/local/rbenv/plugins && \
     cd /usr/local/rbenv/plugins && \
-    curl -L https://github.com/sstephenson/rbenv-gem-rehash/archive/master.tar.gz | tar xz && \
+    curl -L https://github.com/sstephenson/rbenv-gem-rehash/archive/v1.0.0.tar.gz | tar xz && \
     mv rbenv-gem-rehash-master rbenv-gem-rehash
 
 # Install ruby build rbenv plugin
 RUN mkdir -p /usr/local/rbenv/plugins && \
     cd /usr/local/rbenv/plugins && \
-    curl -L https://github.com/sstephenson/ruby-build/archive/master.tar.gz | tar xz && \
+    curl -L https://github.com/sstephenson/ruby-build/archive/v20150303.tar.gz | tar xz && \
     mv ruby-build-master ruby-build
